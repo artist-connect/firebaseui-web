@@ -75,6 +75,9 @@ goog.exportSymbol(
 goog.exportSymbol(
     'firebaseui.auth.AuthUI.prototype.isPendingRedirect',
     firebaseui.auth.AuthUI.prototype.isPendingRedirect);
+goog.exportSymbol(
+  'firebaseui.auth.AuthUI.prototype.getEmailForSignIn',
+  firebaseui.auth.AuthUI.prototype.getEmailForSignIn);
 goog.exportSymbol('firebaseui.auth.AuthUIError', firebaseui.auth.AuthUIError);
 goog.exportSymbol(
     'firebaseui.auth.AuthUIError.prototype.toJSON',
