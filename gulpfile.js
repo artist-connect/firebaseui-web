@@ -110,7 +110,7 @@ const TMP_DIR = 'out';
 const DEST_DIR = 'dist';
 
 // The locale that would be produced with no XTBs.
-const DEFAULT_LOCALE = 'pt-BR';
+const DEFAULT_LOCALE = 'en';
 
 // The list of all locales that are supported.
 const ALL_LOCALES = ['ar-XB', 'ar', 'bg', 'ca', 'cs', 'da', 'de', 'el', 'en',
@@ -389,6 +389,13 @@ gulp.task('clean', () => fse.remove(TMP_DIR));
 gulp.task('default', gulp.series(
     'build-externs', 'build-ts', 'build-js',
     'build-npm', 'build-esm', 'build-css', 'build-css-rtl',
+    'clean'
+));
+
+// Executes the basic tasks for the default language.
+gulp.task('pt-BR', gulp.series(
+    'build-externs', 'build-ts', 'build-js-pt-BR',
+    'build-npm-pt-BR', 'build-esm-pt-BR', 'build-css', 'build-css-rtl',
     'clean'
 ));
 
