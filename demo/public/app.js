@@ -98,7 +98,6 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 // Disable auto-sign in.
 ui.disableAutoSignIn();
 
-
 /**
  * @return {string} The URL of the FirebaseUI standalone widget.
  */
@@ -251,11 +250,11 @@ var initApp = function() {
   document.getElementById('email-disableSignUp-status').addEventListener(
       'change', handleConfigChange);
   document.getElementById("email-disableSignUp-status").checked =
-      getDisableSignUpStatus();  
+      getDisableSignUpStatus();
   document.getElementById('admin-restricted-operation-status').addEventListener(
       'change', handleConfigChange);
   document.getElementById("admin-restricted-operation-status").checked =
-      getAdminRestrictedOperationStatus();  
+      getAdminRestrictedOperationStatus();
 };
 
 window.addEventListener('load', initApp);

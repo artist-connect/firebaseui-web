@@ -111,6 +111,12 @@ firebaseui.auth.AuthUI.prototype.delete = function() {};
  */
 firebaseui.auth.AuthUI.prototype.isPendingRedirect = function() {};
 
+/**
+ * Returns the current user email that is waiting sign in from link.
+ * @return {string}
+ */
+firebaseui.auth.AuthUI.prototype.getEmailForSignIn = function() {};
+
 
 /**
  * The CIAP Error interface.

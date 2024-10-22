@@ -1747,3 +1747,16 @@ firebaseui.auth.AuthUI.prototype.onUpgradeError =
     return goog.Promise.reject(error);
   }
 };
+
+
+/**
+ * Returns the current user email that is waiting sign in from link.
+ * @return {string}
+ */
+firebaseui.auth.AuthUI.prototype.getEmailForSignIn = function() {
+  const link = firebaseui.auth.util.getCurrentUrl();
+  const urlBuilder = new firebaseui.auth.ActionCodeUrlBuilder(link);
+  const sessionId = urlBuilder.getSessionId() || '';
+  return firebaseui.auth.storage.getEmailForSignIn(sessionId, this.getAppId());
+};
+
