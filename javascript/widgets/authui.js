@@ -1751,7 +1751,7 @@ firebaseui.auth.AuthUI.prototype.onUpgradeError =
 
 /**
  * Returns the current user email that is waiting sign in from link.
- * @return {string}
+ * @return {?string}
  */
 firebaseui.auth.AuthUI.prototype.getEmailForSignIn = function() {
   const link = firebaseui.auth.util.getCurrentUrl();
