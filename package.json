@@ -1,12 +1,15 @@
 {
   "name": "@alexrmsouza/firebase-ui",
-  "version": "6.1.0-alpha.4",
+  "version": "6.1.0-alpha.5",
   "description": "Javascript library for customizable UI on top of Firebase SDK",
   "files": [
     "dist/firebaseui.js",
+    "dist/firebaseui__pt_br.js",
     "dist/firebaseui.css",
     "dist/npm.js",
+    "dist/npm__pt_br.js",
     "dist/esm.js",
+    "dist/esm__pt_br.js",
     "dist/index.d.ts",
     "dist/externs",
     "LICENSE",
