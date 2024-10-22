@@ -150,6 +150,7 @@ declare namespace firebaseui.auth {
     reset(): void;
     delete(): Promise<void>;
     isPendingRedirect(): boolean;
+    getEmailForSignIn(): string | null;
   }
 
   class AuthUIError {
@@ -229,7 +230,6 @@ declare namespace firebaseui.auth {
     languageCode: string | null;
     // tslint:disable-next-line:no-any firebase dependency not available.
     processUser(user: any): Promise<any>;
-    getEmailForSignIn(): string | null;
   }
 }
 
