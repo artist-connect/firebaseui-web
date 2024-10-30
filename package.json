@@ -34,7 +34,7 @@
   "author": "Google",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexrmsouza/firebaseui-web-pt-br.git"
+    "url": "https://github.com/artist-connect/firebaseui-web.git"
   },
   "publishConfig": {
     "access": "public"
